@@ -210,7 +210,7 @@ class WebcontentConverter {
             var offsetHeight =
                 await windowBrowserPage.evaluate('document.body.offsetHeight');
             var offsetWidth =
-                await windowBrowserPage.evaluate('document.body.offsetWidth');
+                await windowBrowserPage.evaluate('document.body.lastElementChild.offsetHeight');
             results = await windowBrowserPage.screenshot(
               format: pp.ScreenshotFormat.png,
               clip: pp.Rectangle.fromPoints(
