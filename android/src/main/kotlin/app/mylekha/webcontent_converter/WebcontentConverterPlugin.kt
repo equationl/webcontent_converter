@@ -74,6 +74,7 @@ class WebcontentConverterPlugin : FlutterPlugin, MethodCallHandler, ActivityAwar
                 webView.settings.useWideViewPort = true
                 webView.settings.javaScriptCanOpenWindowsAutomatically = true
                 webView.settings.loadWithOverviewMode = true
+                webView.settings.allowFileAccess = true
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
                     print("\n=======> enabled scrolled <=========")
                     WebView.enableSlowWholeDocumentDraw()
